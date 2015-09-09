@@ -1,0 +1,72 @@
+.home {
+  background-color: rgb(251, 251, 251);
+}
+
+.masthead {
+  top: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  height: 60px;
+  z-index: 99;
+  background-color: #fff;
+  border-bottom: 1px solid #d0d4d9;
+  box-shadow: 0px 1px 1px #d0d4d9;
+  color: $dark_gray;
+}
+
+.app-icon {
+  color: $darker_gray;
+}
+
+.app-name {
+  color: $dark_gray;
+  font-size: 48px;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+
+.cta {
+  color: $darker_gray;
+  font-size: 28px;
+  font-weight: 200;
+}
+
+.cta-header {
+  color: $dark_gray;
+  font-size: 36px;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+
+.simple_form {
+
+  input {
+    border: 1px solid $light_gray;
+    border-radius: 4px;
+    width: 400px;
+    height: 40px;
+
+  }
+  .input-first-name {
+    width: 190px;
+  }
+  .input-last-name {
+    width: 190px;
+    margin-left: 18px;
+  }
+  div.input {
+    margin-bottom: 10px;
+  }
+  label {
+    float: left;
+    width: 100px;
+    text-align: right;
+    margin: 2px 10px;
+  }
+}
+
+::-webkit-input-placeholder {
+   color: black;
+}

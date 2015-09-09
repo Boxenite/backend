@@ -1,0 +1,6 @@
+{
+  "name": "backend",
+  "dependencies": {
+    "basscss": "https://github.com/basscss/basscss.git",
+    "font-awesome" : "https://github.com/FortAwesome/Font-Awesome.git"
+}

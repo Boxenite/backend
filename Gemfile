@@ -19,6 +19,7 @@ gem "simple_form"
 gem "upmin-admin"
 gem "autoprefixer-rails"
 gem "intercom-rails"
+gem 'simple_token_authentication', '~> 1.0'
 
 group :development do
   gem "better_errors"

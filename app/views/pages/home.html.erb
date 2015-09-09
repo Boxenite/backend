@@ -1,0 +1,68 @@
+<div class="masthead">
+    <div class="clearfix masthead-container">
+      <div class="sm-col">
+        <a href="/" class="btn py2">Boxenite</a>
+      </div>
+      <div class="sm-col-right">
+        <a href="/" class="btn py2">Download App</a>
+        <a href="/" class="btn py2">Sign In</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="top-section container px3 py4 mt4">
+  <div class="center">
+    <i class="fa fa-folder-o fa-5x app-icon"></i>
+  </div>
+  <div class="app-name center h1 py3">
+    Boxenite
+  </div>
+</section>
+<section class="middle-section container  mt4">
+  <div class="clearfix">
+    <div class="col sm-col-6">
+      <div class="cta">
+        <div class="cta-header">
+          Great things happen when your code lives here
+        </div>
+        Boxenite keeps your code safe, synced, and running.
+      </div>
+    </div>
+    <div class="col sm-col-6 px4 center p1">
+      <%= simple_form_for :user do |f| %>
+      <div class="clearfix ">
+        <div class="col sm-col-6">
+          <%= f.input :first, placeholder: "first name", label: false, input_html: {class: "input-first-name"}%>
+        </div>
+        <div class="col sm-col-6">
+          <%= f.input :last, placeholder: "last name", label: false, input_html: {class: "input-last-name"}%>
+        </div>
+      </div>
+      <%= f.input :email, placeholder: "email", label: false%>
+      <%= f.input :password, placeholder: "password", label: false %>
+      <%= f.submit "Sign up for free", class: "btn btn-primary"%>
+      <% end %>
+
+
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="black center mt4">
+  <div class="px2 py3 container border-top">
+    <div class="cta-bottom">
+      <h3 class="inline">
+        Made in Scandinavia
+      </h3>
+    </div>
+    <div class="contact mt4">
+       <%= link_to "© Boxenite 2015", root_path, class: "inline" %>
+       <div class="contact-email inline p2">
+         Contact us: <%= mail_to "team@boxenite.com" %>
+       </div>
+    </div>
+  </div>
+</footer>
