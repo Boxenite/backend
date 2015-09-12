@@ -5,7 +5,7 @@
       </div>
       <div class="sm-col-right">
         <a href="/" class="btn py2">Download App</a>
-        <a href="/" class="btn py2">Sign In</a>
+        <a href="/users/sign_in" class="btn py2">Sign In</a>
       </div>
     </div>
   </div>
@@ -27,7 +27,7 @@
       </div>
     </div>
     <div class="col sm-col-6 px4 center p1">
-      <%= simple_form_for :user do |f| %>
+      <%= simple_form_for @user, url: user_registration_path, method: :post do |f| %>
       <div class="clearfix ">
         <div class="col sm-col-6">
           <%= f.input :first, placeholder: "first name", label: false, input_html: {class: "input-first-name"}%>
@@ -40,10 +40,8 @@
       <%= f.input :password, placeholder: "password", label: false %>
       <%= f.submit "Sign up for free", class: "btn btn-primary"%>
       <% end %>
-
-
     </div>
-  </div>
+  </div
 </section>
 
 
