@@ -1,4 +1,4 @@
-<div class="masthead">
+<div class="masthead sm-show">
     <div class="clearfix masthead-container">
       <div class="sm-col">
         <a href="/" class="btn py2">Boxenite</a>
@@ -16,9 +16,9 @@
     <%= image_tag "bxelogo.png", size: "300x250" %>
   </div>
 </section>
-<section class="middle-section container  mt4">
+<section class="middle-section container mt4">
   <div class="clearfix">
-    <div class="col sm-col-6">
+    <div class="sm-show md-show col lg-col-6">
       <div class="cta">
         <div class="cta-header">
           Great things happen when your code lives here
@@ -26,13 +26,21 @@
         Boxenite keeps your code safe, synced, and running.
       </div>
     </div>
-    <div class="col sm-col-6 px4 center p1">
+    <div class="sm-hide md-hide col lg-col-12">
+      <div class="cta center">
+        <div class="cta-header">
+          Great things happen when your code lives here
+        </div>
+        Boxenite keeps your code safe, synced, and running.
+      </div>
+    </div>
+    <div class="col lg-col-6 px4 center p1 sm-show">
       <%= simple_form_for @user, url: user_registration_path, method: :post do |f| %>
-      <div class="clearfix ">
-        <div class="col sm-col-6">
+      <div class="clearfix">
+        <div class="col lg-col-6">
           <%= f.input :first, placeholder: "first name", label: false, input_html: {class: "input-first-name"}%>
         </div>
-        <div class="col sm-col-6">
+        <div class="col lg-col-6">
           <%= f.input :last, placeholder: "last name", label: false, input_html: {class: "input-last-name"}%>
         </div>
       </div>
@@ -41,10 +49,11 @@
       <%= f.submit "Sign up for free", class: "btn btn-primary"%>
       <% end %>
     </div>
+    <div class="col col-12 sm-hide center mt4">
+      <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary mobile-sign-up"%>
+    </div>
   </div
 </section>
-
-
 
 <footer class="black center mt4">
   <div class="px2 py3 container border-top">
