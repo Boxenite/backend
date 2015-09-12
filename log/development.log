@@ -26283,3 +26283,478 @@ source=rack-timeout id=cdaa6befb9c4d0bfe26f6bfb662d6856 timeout=15000ms service=
 source=rack-timeout id=679972635d802c1b31e0e1ae1ef3bc2e timeout=15000ms state=ready
 source=rack-timeout id=679972635d802c1b31e0e1ae1ef3bc2e timeout=15000ms service=0ms state=active
 source=rack-timeout id=679972635d802c1b31e0e1ae1ef3bc2e timeout=15000ms service=6ms state=completed
+source=rack-timeout id=fc61bf67273ed012ba91bdee30f16605 timeout=15000ms state=ready
+source=rack-timeout id=fc61bf67273ed012ba91bdee30f16605 timeout=15000ms service=0ms state=active
+
+
+Started GET "/" for ::1 at 2015-09-12 11:17:38 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by DashboardController#index as HTML
+Redirected to http://localhost:3000/home
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 16ms (ActiveRecord: 0.0ms)
+source=rack-timeout id=fc61bf67273ed012ba91bdee30f16605 timeout=15000ms service=84ms state=completed
+source=rack-timeout id=efcf59890322cb4053b403dca2a788c6 timeout=15000ms state=ready
+source=rack-timeout id=efcf59890322cb4053b403dca2a788c6 timeout=15000ms service=0ms state=active
+
+
+Started GET "/home" for ::1 at 2015-09-12 11:17:38 +0200
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (302.9ms)
+Completed 200 OK in 448ms (Views: 417.0ms | ActiveRecord: 9.2ms)
+source=rack-timeout id=efcf59890322cb4053b403dca2a788c6 timeout=15000ms service=459ms state=completed
+source=rack-timeout id=94eac8b1e3a6706408f3297270f5c2de timeout=15000ms state=ready
+source=rack-timeout id=94eac8b1e3a6706408f3297270f5c2de timeout=15000ms service=1ms state=active
+source=rack-timeout id=94eac8b1e3a6706408f3297270f5c2de timeout=15000ms service=20ms state=completed
+source=rack-timeout id=023c5ffa850a29df1dfea7f9857bc68b timeout=15000ms state=ready
+source=rack-timeout id=023c5ffa850a29df1dfea7f9857bc68b timeout=15000ms service=1ms state=active
+source=rack-timeout id=023c5ffa850a29df1dfea7f9857bc68b timeout=15000ms service=12ms state=completed
+source=rack-timeout id=aa90150cc9d9a6c868bdff5950d4b59a timeout=15000ms state=ready
+source=rack-timeout id=aa90150cc9d9a6c868bdff5950d4b59a timeout=15000ms service=0ms state=active
+
+
+Started GET "/home" for ::1 at 2015-09-12 11:20:38 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (233.4ms)
+Completed 200 OK in 430ms (Views: 408.9ms | ActiveRecord: 3.9ms)
+source=rack-timeout id=aa90150cc9d9a6c868bdff5950d4b59a timeout=15000ms service=481ms state=completed
+source=rack-timeout id=6a4b3381570f1fa8cf0f665b579c2908 timeout=15000ms state=ready
+source=rack-timeout id=6a4b3381570f1fa8cf0f665b579c2908 timeout=15000ms service=1ms state=active
+source=rack-timeout id=6a4b3381570f1fa8cf0f665b579c2908 timeout=15000ms service=13ms state=completed
+source=rack-timeout id=d3fd2bde45e6821f557000b294973073 timeout=15000ms state=ready
+source=rack-timeout id=d3fd2bde45e6821f557000b294973073 timeout=15000ms service=0ms state=active
+source=rack-timeout id=d3fd2bde45e6821f557000b294973073 timeout=15000ms service=15ms state=completed
+source=rack-timeout id=112aa89a73485af33121a7bea075f428 timeout=15000ms state=ready
+source=rack-timeout id=112aa89a73485af33121a7bea075f428 timeout=15000ms service=0ms state=active
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/bxelogo.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  rack-timeout (0.3.2) lib/rack/timeout/core.rb:125:in `block in call'
+  rack-timeout (0.3.2) lib/rack/timeout/support/timeout.rb:19:in `call'
+  rack-timeout (0.3.2) lib/rack/timeout/support/timeout.rb:19:in `timeout'
+  rack-timeout (0.3.2) lib/rack/timeout/core.rb:124:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.13.4) lib/puma/server.rb:541:in `handle_request'
+  puma (2.13.4) lib/puma/server.rb:388:in `process_client'
+  puma (2.13.4) lib/puma/server.rb:270:in `block in run'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+source=rack-timeout id=112aa89a73485af33121a7bea075f428 timeout=15000ms service=259ms state=completed
+source=rack-timeout id=9639445d13580f495e95d66cb3fa201f timeout=15000ms state=ready
+source=rack-timeout id=9639445d13580f495e95d66cb3fa201f timeout=15000ms service=0ms state=active
+source=rack-timeout id=9639445d13580f495e95d66cb3fa201f timeout=15000ms service=7ms state=completed
+source=rack-timeout id=6ae1c44375a727ab3c235cf68805e3e0 timeout=15000ms state=ready
+source=rack-timeout id=6ae1c44375a727ab3c235cf68805e3e0 timeout=15000ms service=6ms state=completed
+source=rack-timeout id=7b9ad57f169389f37202a8062ab6828f timeout=15000ms state=ready
+source=rack-timeout id=7b9ad57f169389f37202a8062ab6828f timeout=15000ms service=0ms state=active
+source=rack-timeout id=7b9ad57f169389f37202a8062ab6828f timeout=15000ms service=6ms state=completed
+source=rack-timeout id=e6b3acc86aad48459929a097941886db timeout=15000ms state=ready
+source=rack-timeout id=e6b3acc86aad48459929a097941886db timeout=15000ms service=0ms state=active
+source=rack-timeout id=e6b3acc86aad48459929a097941886db timeout=15000ms service=19ms state=completed
+source=rack-timeout id=1183da0d98b8094782b38157f8870c54 timeout=15000ms state=ready
+source=rack-timeout id=1183da0d98b8094782b38157f8870c54 timeout=15000ms service=0ms state=active
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/bxelogo.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  rack-timeout (0.3.2) lib/rack/timeout/core.rb:125:in `block in call'
+  rack-timeout (0.3.2) lib/rack/timeout/support/timeout.rb:19:in `call'
+  rack-timeout (0.3.2) lib/rack/timeout/support/timeout.rb:19:in `timeout'
+  rack-timeout (0.3.2) lib/rack/timeout/core.rb:124:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.13.4) lib/puma/server.rb:541:in `handle_request'
+  puma (2.13.4) lib/puma/server.rb:388:in `process_client'
+  puma (2.13.4) lib/puma/server.rb:270:in `block in run'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+source=rack-timeout id=1183da0d98b8094782b38157f8870c54 timeout=15000ms service=229ms state=completed
+source=rack-timeout id=d00be55fae61c5f11d7415ea8fd85c92 timeout=15000ms state=ready
+source=rack-timeout id=d00be55fae61c5f11d7415ea8fd85c92 timeout=15000ms service=0ms state=active
+
+
+Started GET "/home" for ::1 at 2015-09-12 11:20:41 +0200
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (106.1ms)
+Completed 200 OK in 165ms (Views: 162.2ms | ActiveRecord: 0.0ms)
+source=rack-timeout id=d00be55fae61c5f11d7415ea8fd85c92 timeout=15000ms service=171ms state=completed
+source=rack-timeout id=ecb8f97424eb5322afd6586bd8fae0ef timeout=15000ms state=ready
+source=rack-timeout id=ecb8f97424eb5322afd6586bd8fae0ef timeout=15000ms service=1ms state=active
+source=rack-timeout id=ecb8f97424eb5322afd6586bd8fae0ef timeout=15000ms service=12ms state=completed
+source=rack-timeout id=a4f4229c213a63c18e6f5ab36c0b777c timeout=15000ms state=ready
+source=rack-timeout id=a4f4229c213a63c18e6f5ab36c0b777c timeout=15000ms service=0ms state=active
+source=rack-timeout id=a4f4229c213a63c18e6f5ab36c0b777c timeout=15000ms service=12ms state=completed
+source=rack-timeout id=ca1801aa8650344564b12fc1f9e89407 timeout=15000ms state=ready
+source=rack-timeout id=ca1801aa8650344564b12fc1f9e89407 timeout=15000ms service=1ms state=active
+source=rack-timeout id=ca1801aa8650344564b12fc1f9e89407 timeout=15000ms service=14ms state=completed
+source=rack-timeout id=255f550b6b6da585cb54aa2445f138b1 timeout=15000ms state=ready
+source=rack-timeout id=255f550b6b6da585cb54aa2445f138b1 timeout=15000ms service=1ms state=active
+source=rack-timeout id=255f550b6b6da585cb54aa2445f138b1 timeout=15000ms service=7ms state=completed
+source=rack-timeout id=e744bbc868195259c5cbee18f962e30b timeout=15000ms state=ready
+source=rack-timeout id=e744bbc868195259c5cbee18f962e30b timeout=15000ms service=0ms state=active
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/bxelogo.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  rack-timeout (0.3.2) lib/rack/timeout/core.rb:125:in `block in call'
+  rack-timeout (0.3.2) lib/rack/timeout/support/timeout.rb:19:in `call'
+  rack-timeout (0.3.2) lib/rack/timeout/support/timeout.rb:19:in `timeout'
+  rack-timeout (0.3.2) lib/rack/timeout/core.rb:124:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.13.4) lib/puma/server.rb:541:in `handle_request'
+  puma (2.13.4) lib/puma/server.rb:388:in `process_client'
+  puma (2.13.4) lib/puma/server.rb:270:in `block in run'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+source=rack-timeout id=e744bbc868195259c5cbee18f962e30b timeout=15000ms service=222ms state=completed
+source=rack-timeout id=9f3607da57e9bd252b8a836dc65b9e94 timeout=15000ms state=ready
+source=rack-timeout id=9f3607da57e9bd252b8a836dc65b9e94 timeout=15000ms service=0ms state=active
+source=rack-timeout id=9f3607da57e9bd252b8a836dc65b9e94 timeout=15000ms service=4ms state=completed
+source=rack-timeout id=ee0880097b1b284c2ac21f09d659c6cb timeout=15000ms state=ready
+source=rack-timeout id=ee0880097b1b284c2ac21f09d659c6cb timeout=15000ms service=0ms state=active
+source=rack-timeout id=ee0880097b1b284c2ac21f09d659c6cb timeout=15000ms service=4ms state=completed
+source=rack-timeout id=a11870cb079c3de850b8efbf355e1146 timeout=15000ms state=ready
+source=rack-timeout id=a11870cb079c3de850b8efbf355e1146 timeout=15000ms service=1ms state=active
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/bxelogo.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  rack-timeout (0.3.2) lib/rack/timeout/core.rb:125:in `block in call'
+  rack-timeout (0.3.2) lib/rack/timeout/support/timeout.rb:19:in `call'
+  rack-timeout (0.3.2) lib/rack/timeout/support/timeout.rb:19:in `timeout'
+  rack-timeout (0.3.2) lib/rack/timeout/core.rb:124:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.13.4) lib/puma/server.rb:541:in `handle_request'
+  puma (2.13.4) lib/puma/server.rb:388:in `process_client'
+  puma (2.13.4) lib/puma/server.rb:270:in `block in run'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+source=rack-timeout id=a11870cb079c3de850b8efbf355e1146 timeout=15000ms service=224ms state=completed
+source=rack-timeout id=d29a69fdebea4c8c0f0b1894e040c51b timeout=15000ms state=ready
+source=rack-timeout id=d29a69fdebea4c8c0f0b1894e040c51b timeout=15000ms service=0ms state=active
+
+
+Started GET "/home" for ::1 at 2015-09-12 11:20:57 +0200
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (60.1ms)
+Completed 200 OK in 100ms (Views: 98.0ms | ActiveRecord: 0.0ms)
+source=rack-timeout id=d29a69fdebea4c8c0f0b1894e040c51b timeout=15000ms service=105ms state=completed
+source=rack-timeout id=6dd4efb9c3207879969e9dcdfcbd068e timeout=15000ms state=ready
+source=rack-timeout id=6dd4efb9c3207879969e9dcdfcbd068e timeout=15000ms service=1ms state=active
+
+
+Started GET "/images/bxelogo.png" for ::1 at 2015-09-12 11:20:57 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/bxelogo.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  rack-timeout (0.3.2) lib/rack/timeout/core.rb:125:in `block in call'
+  rack-timeout (0.3.2) lib/rack/timeout/support/timeout.rb:19:in `call'
+  rack-timeout (0.3.2) lib/rack/timeout/support/timeout.rb:19:in `timeout'
+  rack-timeout (0.3.2) lib/rack/timeout/core.rb:124:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.13.4) lib/puma/server.rb:541:in `handle_request'
+  puma (2.13.4) lib/puma/server.rb:388:in `process_client'
+  puma (2.13.4) lib/puma/server.rb:270:in `block in run'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/tres/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/tres/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /Users/tres/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /Users/tres/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/tres/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (100.1ms)
+  Rendered /Users/tres/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/tres/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tres/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tres/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/tres/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (77.3ms)
+  Rendered /Users/tres/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/tres/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/tres/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (163.3ms)
+source=rack-timeout id=6dd4efb9c3207879969e9dcdfcbd068e timeout=15000ms service=348ms state=completed
+source=rack-timeout id=a9f850d158dbcf8828f18fb219417c36 timeout=15000ms state=ready
+source=rack-timeout id=a9f850d158dbcf8828f18fb219417c36 timeout=15000ms service=0ms state=active
+source=rack-timeout id=a9f850d158dbcf8828f18fb219417c36 timeout=15000ms service=9ms state=completed
+source=rack-timeout id=22f8e46ed3b254c49fa3eb87198f68a3 timeout=15000ms state=ready
+source=rack-timeout id=22f8e46ed3b254c49fa3eb87198f68a3 timeout=15000ms service=0ms state=active
+source=rack-timeout id=22f8e46ed3b254c49fa3eb87198f68a3 timeout=15000ms service=12ms state=completed
+source=rack-timeout id=2b5878546be4871e7bb56002769f001f timeout=15000ms state=ready
+source=rack-timeout id=2b5878546be4871e7bb56002769f001f timeout=15000ms service=0ms state=active
+source=rack-timeout id=2b5878546be4871e7bb56002769f001f timeout=15000ms service=14ms state=completed
+source=rack-timeout id=85efb6a36262c16d494e3b41bef54dac timeout=15000ms state=ready
+source=rack-timeout id=85efb6a36262c16d494e3b41bef54dac timeout=15000ms service=0ms state=active
+source=rack-timeout id=85efb6a36262c16d494e3b41bef54dac timeout=15000ms service=21ms state=completed
+source=rack-timeout id=1ee2c60a6a84f789343a436de8b3d0b0 timeout=15000ms state=ready
+source=rack-timeout id=1ee2c60a6a84f789343a436de8b3d0b0 timeout=15000ms service=0ms state=active
+source=rack-timeout id=1ee2c60a6a84f789343a436de8b3d0b0 timeout=15000ms service=7ms state=completed
+source=rack-timeout id=e487dc312609f23a8dd007439769ad12 timeout=15000ms state=ready
+source=rack-timeout id=e487dc312609f23a8dd007439769ad12 timeout=15000ms service=1ms state=active
+source=rack-timeout id=e487dc312609f23a8dd007439769ad12 timeout=15000ms service=7ms state=completed
+source=rack-timeout id=58236bfbd779c8cbb931e56eede1551c timeout=15000ms state=ready
+source=rack-timeout id=58236bfbd779c8cbb931e56eede1551c timeout=15000ms service=0ms state=active
+
+
+Started GET "/images/bxelogo.png" for ::1 at 2015-09-12 11:20:57 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/bxelogo.png"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  rack-timeout (0.3.2) lib/rack/timeout/core.rb:125:in `block in call'
+  rack-timeout (0.3.2) lib/rack/timeout/support/timeout.rb:19:in `call'
+  rack-timeout (0.3.2) lib/rack/timeout/support/timeout.rb:19:in `timeout'
+  rack-timeout (0.3.2) lib/rack/timeout/core.rb:124:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.13.4) lib/puma/server.rb:541:in `handle_request'
+  puma (2.13.4) lib/puma/server.rb:388:in `process_client'
+  puma (2.13.4) lib/puma/server.rb:270:in `block in run'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `call'
+  puma (2.13.4) lib/puma/thread_pool.rb:106:in `block in spawn_thread'
+
+
+  Rendered /Users/tres/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/tres/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /Users/tres/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/tres/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/tres/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (70.9ms)
+  Rendered /Users/tres/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/tres/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/tres/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/tres/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/tres/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (47.4ms)
+  Rendered /Users/tres/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/tres/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/tres/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (114.2ms)
+source=rack-timeout id=58236bfbd779c8cbb931e56eede1551c timeout=15000ms service=253ms state=completed
+source=rack-timeout id=11ab42216da7ad76232073caf34cfdc2 timeout=15000ms state=ready
+source=rack-timeout id=11ab42216da7ad76232073caf34cfdc2 timeout=15000ms service=0ms state=active
+
+
+Started GET "/home" for ::1 at 2015-09-12 11:21:04 +0200
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (72.7ms)
+Completed 200 OK in 115ms (Views: 104.1ms | ActiveRecord: 0.0ms)
+source=rack-timeout id=11ab42216da7ad76232073caf34cfdc2 timeout=15000ms service=121ms state=completed
+source=rack-timeout id=31cc3ea94e1e542e77a4b0548276b460 timeout=15000ms state=ready
+source=rack-timeout id=31cc3ea94e1e542e77a4b0548276b460 timeout=15000ms service=2ms state=active
+source=rack-timeout id=31cc3ea94e1e542e77a4b0548276b460 timeout=15000ms service=8ms state=completed
+source=rack-timeout id=a7d2d62a8ae8b9a0fb3f0ac7bac52267 timeout=15000ms state=ready
+source=rack-timeout id=a7d2d62a8ae8b9a0fb3f0ac7bac52267 timeout=15000ms service=0ms state=active
+source=rack-timeout id=a7d2d62a8ae8b9a0fb3f0ac7bac52267 timeout=15000ms service=8ms state=completed
+source=rack-timeout id=7a7737a94ab783cb6ba9716a7a8c8bec timeout=15000ms state=ready
+source=rack-timeout id=7a7737a94ab783cb6ba9716a7a8c8bec timeout=15000ms service=0ms state=active
+source=rack-timeout id=7a7737a94ab783cb6ba9716a7a8c8bec timeout=15000ms service=8ms state=completed
+source=rack-timeout id=dfecaa53284bbeed66da3d632a9a6fc1 timeout=15000ms state=ready
+source=rack-timeout id=dfecaa53284bbeed66da3d632a9a6fc1 timeout=15000ms service=0ms state=active
+source=rack-timeout id=dfecaa53284bbeed66da3d632a9a6fc1 timeout=15000ms service=10ms state=completed
+source=rack-timeout id=f41ea8abedf01fc0118777cdedad58c9 timeout=15000ms state=ready
+source=rack-timeout id=f41ea8abedf01fc0118777cdedad58c9 timeout=15000ms service=0ms state=active
+source=rack-timeout id=f41ea8abedf01fc0118777cdedad58c9 timeout=15000ms service=8ms state=completed
+source=rack-timeout id=6e15ab5e57079350a5b639e76d22b0c8 timeout=15000ms state=ready
+source=rack-timeout id=6e15ab5e57079350a5b639e76d22b0c8 timeout=15000ms service=0ms state=active
+source=rack-timeout id=6e15ab5e57079350a5b639e76d22b0c8 timeout=15000ms service=5ms state=completed
+source=rack-timeout id=69486742e7f0464dc711b902283f5be7 timeout=15000ms state=ready
+source=rack-timeout id=69486742e7f0464dc711b902283f5be7 timeout=15000ms service=0ms state=active
+source=rack-timeout id=69486742e7f0464dc711b902283f5be7 timeout=15000ms service=5ms state=completed
+source=rack-timeout id=e17aeae77a67ce127e9fc406fac383f0 timeout=15000ms state=ready
+source=rack-timeout id=e17aeae77a67ce127e9fc406fac383f0 timeout=15000ms service=0ms state=active
+
+
+Started GET "/home" for ::1 at 2015-09-12 11:21:06 +0200
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (64.6ms)
+Completed 200 OK in 102ms (Views: 100.0ms | ActiveRecord: 0.0ms)
+source=rack-timeout id=e17aeae77a67ce127e9fc406fac383f0 timeout=15000ms service=109ms state=completed
+source=rack-timeout id=568819a06f9c47223397ee584e6183cb timeout=15000ms state=ready
+source=rack-timeout id=568819a06f9c47223397ee584e6183cb timeout=15000ms service=1ms state=active
+source=rack-timeout id=568819a06f9c47223397ee584e6183cb timeout=15000ms service=10ms state=completed
+source=rack-timeout id=de4775d89ebc3707a2cb812f5e71067a timeout=15000ms state=ready
+source=rack-timeout id=de4775d89ebc3707a2cb812f5e71067a timeout=15000ms service=0ms state=active
+source=rack-timeout id=de4775d89ebc3707a2cb812f5e71067a timeout=15000ms service=6ms state=completed
+source=rack-timeout id=44fe52254b0879da2a83ae833e154abb timeout=15000ms state=ready
+source=rack-timeout id=44fe52254b0879da2a83ae833e154abb timeout=15000ms service=0ms state=active
+source=rack-timeout id=44fe52254b0879da2a83ae833e154abb timeout=15000ms service=5ms state=completed
+source=rack-timeout id=3d59558be8f3676cc87eb8ea2e2a507c timeout=15000ms state=ready
+source=rack-timeout id=3d59558be8f3676cc87eb8ea2e2a507c timeout=15000ms service=0ms state=active
+source=rack-timeout id=3d59558be8f3676cc87eb8ea2e2a507c timeout=15000ms service=7ms state=completed
+source=rack-timeout id=445f0189b1b1ba8b2d6799cd52663f7a timeout=15000ms state=ready
+source=rack-timeout id=445f0189b1b1ba8b2d6799cd52663f7a timeout=15000ms service=0ms state=active
+source=rack-timeout id=445f0189b1b1ba8b2d6799cd52663f7a timeout=15000ms service=6ms state=completed
+source=rack-timeout id=3e01527dc9e4d27217a9c9601048e40c timeout=15000ms state=ready
+source=rack-timeout id=3e01527dc9e4d27217a9c9601048e40c timeout=15000ms service=0ms state=active
+source=rack-timeout id=3e01527dc9e4d27217a9c9601048e40c timeout=15000ms service=8ms state=completed
+source=rack-timeout id=d731eafee8876d8289353f3f125225a9 timeout=15000ms state=ready
+source=rack-timeout id=d731eafee8876d8289353f3f125225a9 timeout=15000ms service=0ms state=active
+source=rack-timeout id=d731eafee8876d8289353f3f125225a9 timeout=15000ms service=5ms state=completed
+source=rack-timeout id=6620911849698bb3a1a295eb91e590c0 timeout=15000ms state=ready
+source=rack-timeout id=6620911849698bb3a1a295eb91e590c0 timeout=15000ms service=0ms state=active
+
+
+Started GET "/home" for ::1 at 2015-09-12 11:21:08 +0200
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (72.1ms)
+Completed 200 OK in 106ms (Views: 103.8ms | ActiveRecord: 0.0ms)
+source=rack-timeout id=6620911849698bb3a1a295eb91e590c0 timeout=15000ms service=110ms state=completed
+source=rack-timeout id=897902cd5c0741ce8569967f32b99237 timeout=15000ms state=ready
+source=rack-timeout id=897902cd5c0741ce8569967f32b99237 timeout=15000ms service=1ms state=active
+source=rack-timeout id=897902cd5c0741ce8569967f32b99237 timeout=15000ms service=17ms state=completed
+source=rack-timeout id=af391212f1f0544bd5e035f2647c087b timeout=15000ms state=ready
+source=rack-timeout id=af391212f1f0544bd5e035f2647c087b timeout=15000ms service=0ms state=active
+source=rack-timeout id=af391212f1f0544bd5e035f2647c087b timeout=15000ms service=7ms state=completed
+source=rack-timeout id=cfbaf0d4d25e0090a9ab743ee99f74d9 timeout=15000ms state=ready
+source=rack-timeout id=cfbaf0d4d25e0090a9ab743ee99f74d9 timeout=15000ms service=0ms state=active
+source=rack-timeout id=cfbaf0d4d25e0090a9ab743ee99f74d9 timeout=15000ms service=8ms state=completed
+source=rack-timeout id=c229421078b3618c1348560626dfe4dd timeout=15000ms state=ready
+source=rack-timeout id=c229421078b3618c1348560626dfe4dd timeout=15000ms service=0ms state=active
+source=rack-timeout id=c229421078b3618c1348560626dfe4dd timeout=15000ms service=7ms state=completed
+source=rack-timeout id=7fa0f584761f2af69b5685818eefe521 timeout=15000ms state=ready
+source=rack-timeout id=7fa0f584761f2af69b5685818eefe521 timeout=15000ms service=0ms state=active
+source=rack-timeout id=7fa0f584761f2af69b5685818eefe521 timeout=15000ms service=7ms state=completed
+source=rack-timeout id=b4d08cb2a208c32944ccdbe718e552f3 timeout=15000ms state=ready
+source=rack-timeout id=b4d08cb2a208c32944ccdbe718e552f3 timeout=15000ms service=0ms state=active
+source=rack-timeout id=b4d08cb2a208c32944ccdbe718e552f3 timeout=15000ms service=4ms state=completed
+source=rack-timeout id=f8fd118eeea8c25755523b0bcb326e4c timeout=15000ms state=ready
+source=rack-timeout id=f8fd118eeea8c25755523b0bcb326e4c timeout=15000ms service=0ms state=active
+source=rack-timeout id=f8fd118eeea8c25755523b0bcb326e4c timeout=15000ms service=8ms state=completed
+source=rack-timeout id=f29d1a9a6134ce6e8ee76a915ca3f7b5 timeout=15000ms state=ready
+source=rack-timeout id=f29d1a9a6134ce6e8ee76a915ca3f7b5 timeout=15000ms service=0ms state=active
+
+
+Started GET "/home" for ::1 at 2015-09-12 11:21:08 +0200
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (72.3ms)
+Completed 200 OK in 106ms (Views: 103.5ms | ActiveRecord: 0.0ms)
+source=rack-timeout id=f29d1a9a6134ce6e8ee76a915ca3f7b5 timeout=15000ms service=112ms state=completed
+source=rack-timeout id=02539252745d4fa8485d17ec532461b9 timeout=15000ms state=ready
+source=rack-timeout id=02539252745d4fa8485d17ec532461b9 timeout=15000ms service=1ms state=active
+source=rack-timeout id=02539252745d4fa8485d17ec532461b9 timeout=15000ms service=6ms state=completed
+source=rack-timeout id=880877fcdbfad5aa356c669c38f80062 timeout=15000ms state=ready
+source=rack-timeout id=880877fcdbfad5aa356c669c38f80062 timeout=15000ms service=0ms state=active
+source=rack-timeout id=880877fcdbfad5aa356c669c38f80062 timeout=15000ms service=13ms state=completed
+source=rack-timeout id=ba39c47ab35dc3163c05c81e7e769f8a timeout=15000ms state=ready
+source=rack-timeout id=ba39c47ab35dc3163c05c81e7e769f8a timeout=15000ms service=0ms state=active
+source=rack-timeout id=ba39c47ab35dc3163c05c81e7e769f8a timeout=15000ms service=6ms state=completed
+source=rack-timeout id=6da9fa2f751545111a63a6f4f872f798 timeout=15000ms state=ready
+source=rack-timeout id=6da9fa2f751545111a63a6f4f872f798 timeout=15000ms service=0ms state=active
+source=rack-timeout id=6da9fa2f751545111a63a6f4f872f798 timeout=15000ms service=7ms state=completed
+source=rack-timeout id=d2ea76ac42c839a5cef119e8ee40b498 timeout=15000ms state=ready
+source=rack-timeout id=d2ea76ac42c839a5cef119e8ee40b498 timeout=15000ms service=0ms state=active
+source=rack-timeout id=d2ea76ac42c839a5cef119e8ee40b498 timeout=15000ms service=7ms state=completed
+source=rack-timeout id=125867cb76f5b12d0c6dfb5bcc083308 timeout=15000ms state=ready
+source=rack-timeout id=125867cb76f5b12d0c6dfb5bcc083308 timeout=15000ms service=0ms state=active
+source=rack-timeout id=125867cb76f5b12d0c6dfb5bcc083308 timeout=15000ms service=8ms state=completed
+source=rack-timeout id=22f621570530648435bb28bbd08ff2fc timeout=15000ms state=ready
+source=rack-timeout id=22f621570530648435bb28bbd08ff2fc timeout=15000ms service=0ms state=active
+source=rack-timeout id=22f621570530648435bb28bbd08ff2fc timeout=15000ms service=6ms state=completed
