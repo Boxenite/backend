@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   get "home" => "pages#home", as: :home
   get 'dashboard' => 'dashboard#index', as: :dashboard
+  post "command_line" => "app#command_line", as: :command_line
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
