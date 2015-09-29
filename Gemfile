@@ -20,6 +20,7 @@ gem "upmin-admin"
 gem "autoprefixer-rails"
 gem "intercom-rails"
 gem 'simple_token_authentication', '~> 1.0'
+gem 'therubyracer', platforms: :ruby
 
 group :development do
   gem "better_errors"
