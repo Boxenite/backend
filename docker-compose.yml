@@ -2,10 +2,15 @@ db:
   image: postgres
 web:
   build: .
-  command: bundle exec rails s -p 3000 -b '0.0.0.0'
-  volumes:
-    - .:/myapp
+  command: /bin/sh -c "cd /opt/boxenite/web-app && bundle exec rails s -p 3000 -b '0.0.0.0'"
+  volumes_from:
+    - boxenite
   ports:
-    - "3000:3000"
+    - "3001:3000"
   links:
     - db
+boxenite:
+  image: debian:jessie
+  command: /bin/sleep infinity
+  volumes:
+    - "/home/lefant/boxenite/web-app:/opt/boxenite/web-app"
