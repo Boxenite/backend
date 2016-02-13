@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users, controllers: { sessions: :sessions }
+  devise_for :users
   root to: 'dashboard#index'
 
   get "home" => "pages#home", as: :home
